@@ -21,8 +21,9 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-use Cake\Routing\Route\DashedRoute;
 use Cake\Routing\RouteBuilder;
+use Cake\Routing\Route\DashedRoute;
+use Cake\Routing\Router;
 
 /*
  * The default class to use for all routes
@@ -43,6 +44,13 @@ use Cake\Routing\RouteBuilder;
  */
 /** @var \Cake\Routing\RouteBuilder $routes */
 $routes->setRouteClass(DashedRoute::class);
+
+// Application Routes
+Router::prefix("admin", function (RouteBuilder $route) {
+
+    $route->connect("/", ["controller" => "Dashboards", "action" => "index"]);
+
+});
 
 $routes->scope('/', function (RouteBuilder $builder) {
     /*
@@ -80,10 +88,10 @@ $routes->scope('/', function (RouteBuilder $builder) {
  * ```
  * $routes->scope('/api', function (RouteBuilder $builder) {
  *     // No $builder->applyMiddleware() here.
- *     
+ *
  *     // Parse specified extensions from URLs
  *     // $builder->setExtensions(['json', 'xml']);
- *     
+ *
  *     // Connect API actions here.
  * });
  * ```
