@@ -26,7 +26,7 @@
                with font-awesome or any other icon font library -->
 
                <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?=$this->Url->build('/admin', ['fullBase' => true])?>" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -44,13 +44,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="<?=$this->Url->build('/admin/add-college', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add College</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+              <a href="<?=$this->Url->build('/admin/list-colleges', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>List Colleges</p>
                 </a>
@@ -70,13 +70,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+              <a href="<?=$this->Url->build('/admin/add-branch', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Branch</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+              <a href="<?=$this->Url->build('/admin/list-branches', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>List Branches</p>
                 </a>
@@ -97,13 +97,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+              <a href="<?=$this->Url->build('/admin/add-student', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Student</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+              <a href="<?=$this->Url->build('/admin/list-students', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>List Students</p>
                 </a>
@@ -123,13 +123,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+              <a href="<?=$this->Url->build('/admin/add-staff', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Staff</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+              <a href="<?=$this->Url->build('/admin/list-staffs', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>List Staffs</p>
                 </a>
@@ -150,19 +150,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+              <a href="<?=$this->Url->build('/admin/college-report', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Colleges Report</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+              <a href="<?=$this->Url->build('/admin/student-report', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Students Report</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+              <a href="<?=$this->Url->build('/admin/staff-report', ['fullBase' => true])?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Staffs Report</p>
                 </a>
