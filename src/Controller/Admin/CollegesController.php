@@ -12,4 +12,23 @@ class CollegesController extends AppController
         parent::initialize();
     }
 
+    public function addCollege()
+    {
+
+    }
+
+    public function listColleges()
+    {
+
+    }
+
+    public function editCollege($id = null)
+    {
+
+    }
+    public function deleteCollege($id = null)
+    {
+
+    }
+
 }
