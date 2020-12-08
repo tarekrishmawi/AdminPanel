@@ -15,17 +15,17 @@ class ReportsController extends AppController
 
     public function collegesReport()
     {
-
+        $this->set("title", "Colleges Report | Academics Management");
     }
 
     public function studentsReport()
     {
-
+        $this->set("title", "Students Report | Academics Management");
     }
 
     public function staffsReport()
     {
-
+        $this->set("title", "Staffs Report | Academics Management");
     }
 
 }

@@ -14,9 +14,9 @@ class DashboardsController extends AppController
         $this->viewBuilder()->setLayout("admin");
     }
 
-
-    public function index(){
-
+    public function index()
+    {
+        $this->set("title", "Admin | Academics Management");
     }
 
 }
